@@ -1,0 +1,18 @@
+{
+  "business_objective": null,
+  "primary_outcome_definition": null,
+  "preferred_outcome_source": null,
+  "period": null,
+  "comparison_period": null,
+  "timezone": null,
+  "currency": null,
+  "spend_basis": null,
+  "approved_target_version": null,
+  "priority_segments": [],
+  "output_format": "concise performance review with actions",
+  "audience": null,
+  "known_changes": [],
+  "known_conversion_maturity": null,
+  "questions_to_answer": [],
+  "note": "Optional human intake aid. Inspect supplied files first. This is not a helper-ready calculation configuration."
+}

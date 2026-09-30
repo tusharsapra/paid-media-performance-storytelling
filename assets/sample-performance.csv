@@ -1,0 +1,5 @@
+row_id,source_file,source_row,scope_id,period_id,campaign_id,product,funnel,market,channel,spend,impressions,clicks,primary_outcomes,qualified_outcomes,revenue
+r1,fictional-delivery.csv,row 2,lead-generation,previous,c1,Service A,Consideration,North,Paid social,50000,1000000,10000,300,100,
+r2,fictional-delivery.csv,row 3,lead-generation,previous,c2,Service A,Consideration,South,Search,40000,400000,8000,150,80,
+r3,fictional-delivery.csv,row 4,lead-generation,current,c1,Service A,Consideration,North,Paid social,45000,1200000,12000,400,100,
+r4,fictional-delivery.csv,row 5,lead-generation,current,c2,Service A,Consideration,South,Search,35000,350000,7000,200,80,

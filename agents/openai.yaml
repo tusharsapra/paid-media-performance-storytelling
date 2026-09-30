@@ -1,0 +1,14 @@
+interface:
+  display_name: Paid Media Performance Storytelling
+  short_description: Turn paid-media data into evidence-backed reports
+  default_prompt: Use $paid-media-performance-storytelling to analyse these paid-media
+    results against the supplied targets and write a concise review with actions.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

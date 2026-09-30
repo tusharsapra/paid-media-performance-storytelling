@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "mutually_exclusive_rows": true,
+  "grain": ["campaign_id"],
+  "reporting_question": "Explain lead delivery against plan, changes in efficiency and qualified demand, and next actions.",
+  "scopes": {
+    "lead-generation": {
+      "currency": "USD",
+      "spend_basis": "media spend excluding fees and taxes",
+      "timezone": "UTC",
+      "date_basis": "acquisition cohort; equally mature fictional outcomes",
+      "click_type": "defined destination clicks",
+      "primary_outcome": {
+        "name": "raw leads",
+        "definition": "deduplicated valid form submissions in the acquisition cohort",
+        "source": "fictional validated CRM summary aligned to delivery",
+        "counting": "one valid lead per person",
+        "attribution": "fictional agreed last-click campaign attribution"
+      },
+      "spend_outcome_compatible": true,
+      "click_outcome_compatible": true,
+      "qualified_outcome": {
+        "name": "qualified leads",
+        "definition": "sales-accepted leads from the same equally mature acquisition cohort",
+        "source": "fictional validated CRM summary",
+        "same_cohort": true,
+        "spend_compatible": true
+      }
+    }
+  },
+  "periods": {
+    "previous": {"start": "2025-04-01", "end": "2025-04-30", "status": "complete", "exported_at": "2025-07-20T12:00:00Z"},
+    "current": {"start": "2025-06-01", "end": "2025-06-30", "status": "complete", "exported_at": "2025-07-20T12:00:00Z"}
+  },
+  "targets": [{"scope_id": "lead-generation", "period_id": "current", "basis_confirmed": true, "budget": 100000, "primary_outcomes": 500}],
+  "comparisons": [{"scope_id": "lead-generation", "current": "current", "previous": "previous", "basis_confirmed": true, "periods_comparable": true}],
+  "fixture_note": "All businesses, campaign records, values and reporting assertions are fictional. These are normalized teaching data, not a native platform export."
+}
